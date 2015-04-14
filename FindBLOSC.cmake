@@ -21,28 +21,3 @@ if(BLOSC_FOUND)
 endif()
 
 mark_as_advanced(BLOSC_INCLUDE_DIR BLOSC_LIBRARY BLOSC_LIBRARIES)
-
-if(0)
-include(LibFindMacros)
-
-# Use pkg-config to get hints about paths
-libfind_pkg_check_modules(BLOSC_PKGCONF BLOSC)
-
-# Include dir
-find_path(BLOSC_INCLUDE_DIR
-  NAMES blosc.h
-  PATHS ${BLOSC_PKGCONF_INCLUDE_DIRS}
-  )
-
-# Library location
-find_library(BLOSC_LIBRARY
-  NAMES blosc
-  PATHS ${BLOSC_PKGCONF_LIBRARY_DIRS}
-  )
-
-# Set the include dir variables and the libraries
-# NOTE: Singular variables for this library, plural for libraries this lib depends on.
-set(BLOSC_PROCESS_INCLUDES BLOSC_INCLUDE_DIR)
-set(BLOSC_PROCESS_LIBS BLOSC_LIBRARY)
-libfind_process(BLOSC)
-endif()

@@ -7,7 +7,7 @@
 # questions: jason.p.marshall at gmail dot com
 #
 
-find_path(LOG4CPLUS_INCLUDE_DIR LOG4CPLUS)
+find_path(LOG4CPLUS_INCLUDE_DIR log4cplus)
 
 find_library(LOG4CPLUS_LIBRARY NAMES log4cplus)
 

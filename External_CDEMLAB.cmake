@@ -1,5 +1,5 @@
 # An external project for cdemlab
-set(cdemlab_prefix "${CMAKE_CURRENT_BINARY_DIR}/modules/example")
+set(cdemlab_prefix "${CMAKE_CURRENT_BINARY_DIR}/modules/cdemlab")
 
 # switch between operating systems
 if(WIN32)

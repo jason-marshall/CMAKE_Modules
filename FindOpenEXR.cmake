@@ -3,9 +3,19 @@
 #
 #  OpenEXR_FOUND - system has OpenEXR
 #  OpenEXR_INCLUDE_DIRS - the OpenEXR include directories
-#  OpenEXR_LIBRARIES - link these to use OpenEXR
 # questions: jason.p.marshall at gmail dot com
 #
+
+find_path(OpenEXR_INCLUDE_DIR OpenEXR)
+
+# handle the QUIETLY and REQUIRED arguments and set OpenEXR_FOUND to TRUE if
+# all listed variables are TRUE
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(OpenEXR DEFAULT_MSG OpenEXR_INCLUDE_DIR)
+
+mark_as_advanced(OpenEXR_INCLUDE_DIR)
+
+if(0)
 include(LibFindMacros)
 
 # Use pkg-config to get hints about paths
@@ -23,3 +33,4 @@ set(OpenEXR_INCLUDE_DIR ${OpenEXR_INCLUDE_DIR}/OpenEXR)
 # NOTE: Singular variables for this library, plural for libraries this lib depends on.
 set(OpenEXR_PROCESS_INCLUDES OpenEXR_INCLUDE_DIR)
 libfind_process(OpenEXR)
+endif()

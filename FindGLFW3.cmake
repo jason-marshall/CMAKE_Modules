@@ -21,6 +21,7 @@ if(GLFW3_FOUND)
 endif()
 
 mark_as_advanced(GLFW3_INCLUDE_DIR GLFW3_LIBRARY GLFW3_LIBRARIES)
+message(${GLFW3_INCLUDE_DIR})
 
 if(0)
 include(LibFindMacros)

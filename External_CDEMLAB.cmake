@@ -10,7 +10,7 @@ else()
     # specify location
     PREFIX ${cdemlab_prefix}
     # src location
-    SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src
+    SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/cdemlab
     # install location
     INSTALL_DIR ${CMAKE_INSTALL_PREFIX}
     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=<INSTALL_DIR>

@@ -18,9 +18,9 @@ else()
     BUILD_IN_SOURCE 1
     BUILD_COMMAND ""
     # configure command
-    CONFIGURE_COMMAND ""
-    # install directory
     INSTALL_DIR ${CMAKE_INSTALL_PREFIX}
-    INSTALL_COMMAND <SOURCE_DIR>/bootstrap.sh --prefix=<INSTALL_DIR> --with-libraries=all
+    CONFIGURE_COMMAND <SOURCE_DIR>/bootstrap.sh --prefix=<INSTALL_DIR> --with-libraries=all
+    # install command
+    INSTALL_COMMAND <SOURCE_DIR>/b2 install
     )
 endif()

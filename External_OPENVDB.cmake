@@ -18,7 +18,7 @@ else()
     #SOURCE_DIR ${openvdb_prefix}/src
     # install location
     INSTALL_DIR ${CMAKE_INSTALL_PREFIX}
-    CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=<INSTALL_DIR> -DCMAKE_PREFIX_PATH:PATH=<INSTALL_DIR>
+    CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=<INSTALL_DIR>
     )
 
   #ExternalProject_Add_Step(openvdb forcebuild

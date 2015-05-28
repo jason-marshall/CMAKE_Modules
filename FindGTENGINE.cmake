@@ -9,9 +9,11 @@
 
 find_path(GTENGINE_INCLUDE_DIR gtengine)
 
+find_library(GTENGINE_LIBRARY NAMES gtengine)
+
 # handle the QUIETLY and REQUIRED arguments and set GTENGINE_FOUND to TRUE if
 # all listed variables are TRUE
 include(FindPackageHandleStandardArgs)
-find_package_handle_standard_args(GTENGINE DEFAULT_MSG GTENGINE_INCLUDE_DIR)
+find_package_handle_standard_args(GTENGINE DEFAULT_MSG GTENGINE_INCLUDE_DIR GTENGINE_LIBRARY)
 
-mark_as_advanced(GTENGINE_INCLUDE_DIR)
+mark_as_advanced(GTENGINE_INCLUDE_DIR GTENGINE_LIBRARY)

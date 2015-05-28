@@ -14,8 +14,8 @@ else()
     # install location
     INSTALL_DIR ${INSTALL_DIRECTORY}
     BUILD_IN_SOURCE 1
-    BUILD_COMMAND make CFG=ReleaseStatic -f ${gtengine_prefix}/GeometricTools/GTEngine/makefile.gte
+    BUILD_COMMAND make CFG=ReleaseStatic -f ${gtengine_prefix}/src/gtengine/GTEngine/makefile.gte
     CONFIGURE_COMMAND ""
-    INSTALL_COMMAND mkdir ${CMAKE_CURRENT_BINARY_DIR}/prefix/include/gtengine && cp -r ${gtengine_prefix}/GeometricTools/GTEngine/Include/* ${CMAKE_CURRENT_BINARY_DIR}/prefix/include/gtengine/. && ln -sfv ${gtengine_prefix}/GeometricTools/GTEngine/lib/ReleaseStatic/libgtengine.a ${CMAKE_CURRENT_BINARY_DIR}/prefix/lib/libgtengine.so
+    INSTALL_COMMAND mkdir ${CMAKE_CURRENT_BINARY_DIR}/prefix/include/gtengine && cp -r ${gtengine_prefix}/src/gtengine/GTEngine/Include/* ${CMAKE_CURRENT_BINARY_DIR}/prefix/include/gtengine/. && ln -sfv ${gtengine_prefix}/src/gtengine/GTEngine/lib/ReleaseStatic/libgtengine.a ${CMAKE_CURRENT_BINARY_DIR}/prefix/lib/libgtengine.so
     )
 endif()

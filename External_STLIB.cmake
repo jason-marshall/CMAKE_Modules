@@ -7,6 +7,7 @@ if(WIN32)
 
 else()
   ExternalProject_Add(stlib
+    DEPENDS ${STLIB_DEPENDENCIES}
     # specify location
     PREFIX ${stlib_prefix}
     # download

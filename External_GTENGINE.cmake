@@ -1,6 +1,6 @@
 # An external project for gtengine
 set(gtengine_prefix "${CMAKE_CURRENT_BINARY_DIR}/modules/gtengine")
-set(gtengine_file "http://www.geometrictools.com/Downloads/GeometricToolsEngine1p12.zip")
+set(gtengine_file "http://www.geometrictools.com/Downloads/GeometricToolsEngine1p14.zip")
 
 # If Windows we use CMake, otherwise ./configure
 if(WIN32)
@@ -19,3 +19,4 @@ else()
     INSTALL_COMMAND mkdir -p ${CMAKE_CURRENT_BINARY_DIR}/prefix/include/gtengine &&  sh -c "cp ${gtengine_prefix}/src/gtengine/GTEngine/Include/*.h ${CMAKE_CURRENT_BINARY_DIR}/prefix/include/gtengine/." && ln -sfv ${gtengine_prefix}/src/gtengine/GTEngine/lib/ReleaseStatic/libgtengine.a ${CMAKE_CURRENT_BINARY_DIR}/prefix/lib/libgtengine.so
     )
 endif()
+

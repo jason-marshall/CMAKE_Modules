@@ -14,7 +14,6 @@ else()
     # install location
     INSTALL_DIR ${CMAKE_INSTALL_PREFIX}
     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=<INSTALL_DIR>
-    CMAKE_CACHE_ARGS -DMPI_FLAG:BOOL=${MPI_FLAG}
     )
 
   #ExternalProject_Add_Step(example forcebuild

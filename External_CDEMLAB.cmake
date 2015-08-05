@@ -13,7 +13,7 @@ else()
     SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/cdemlab
     # install location
     INSTALL_DIR ${CMAKE_INSTALL_PREFIX}
-    CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=<INSTALL_DIR>
+    CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=<INSTALL_DIR> 
     )
 
   #ExternalProject_Add_Step(example forcebuild

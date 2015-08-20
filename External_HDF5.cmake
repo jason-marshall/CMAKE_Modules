@@ -1,5 +1,5 @@
 # An external project for hdf5
-set(hdf5_prefix "${CMAKE_CURRENT_BINARY_DIR}/modules/hdf5")
+set(hdf5_prefix "${CMAKE_CURRENT_BINARY_DIR}/modules")
 
 # switch between operating systems
 if(WIN32)

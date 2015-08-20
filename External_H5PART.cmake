@@ -17,5 +17,7 @@ else()
     # install directory
     INSTALL_DIR ${CMAKE_INSTALL_PREFIX}
     CONFIGURE_COMMAND <SOURCE_DIR>/configure --prefix=<INSTALL_DIR> --enable-parallel HDF5ROOT=${CMAKE_INSTALL_PREFIX}
+    BUILD_COMMAND "make"
+    INSTALL_COMMAND "make install"
     )
 endif()

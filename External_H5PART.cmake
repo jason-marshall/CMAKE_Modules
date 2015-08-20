@@ -1,6 +1,6 @@
 # An external project for h5part
 set(h5part_prefix "${CMAKE_CURRENT_BINARY_DIR}/modules/h5part")
-set(h5part_md5 b540db502c5fa42078249f43d18a4652)
+set(h5part_md5 327c63d198e38a12565b74cffdf1f9d7)
 set(h5part_file "https://codeforge.lbl.gov/frs/download.php/file/387/H5Part-1.6.6.tar.gz")
 
 # switch between operating systems

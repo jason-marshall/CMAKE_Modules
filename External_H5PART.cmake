@@ -9,7 +9,6 @@ if(WIN32)
 else()
   ExternalProject_Add(h5part
     DEPENDS ${H5PART_DEPENDENCIES}
-    # specify build location
     PREFIX ${h5part_prefix}
     # download stuff
     URL ${h5part_file}

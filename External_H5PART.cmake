@@ -1,7 +1,7 @@
 # An external project for h5part
 set(h5part_prefix "${CMAKE_CURRENT_BINARY_DIR}/modules")
-set(h5part_md5 bd4b558e0ad55624cc1681760ac7d217)
-set(h5part_file "https://github.com/jason-marshall/H5PartFix/archive/v1.0.tar.gz")
+set(h5part_md5 4467c25ed9c0b126b194a4d9d66c29ac)
+set(h5part_file "https://github.com/jason-marshall/H5PartFix/archive/v1.1.tar.gz")
 
 # switch between operating systems
 if(WIN32)

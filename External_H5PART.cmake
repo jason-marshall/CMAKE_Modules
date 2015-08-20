@@ -16,5 +16,6 @@ else()
     URL_MD5 ${h5part_md5}
     # install directory
     INSTALL_DIR ${CMAKE_INSTALL_PREFIX}
-    CONFIGURE_COMMAND <SOURCE_DIR>/configure --prefix=<INSTALL_DIR> --enable-parallel --with-hdf5path=${CMAKE_INSTALL_PREFIX})
+    CONFIGURE_COMMAND <SOURCE_DIR>/configure --prefix=<INSTALL_DIR> --enable-parallel --with-hdf5path=${CMAKE_INSTALL_PREFIX}
+    )
 endif()

@@ -6,7 +6,7 @@ if(WIN32)
 
 else()
   set(hdf5_file "https://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.17.tar.gz")
-  set(hdf5_md5 4467c25ed9c0b126b194a4d9d66c29ac)
+  set(hdf5_md5 7d572f8f3b798a628b8245af0391a0ca)
   ExternalProject_Add(hdf5
     # specify build location
     PREFIX ${hdf5_prefix}

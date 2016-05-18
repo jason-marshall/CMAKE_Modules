@@ -15,5 +15,5 @@ find_library(GTENGINE_LIBRARY NAMES gtengine)
 # all listed variables are TRUE
 include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(GTENGINE DEFAULT_MSG GTENGINE_INCLUDE_DIR GTENGINE_LIBRARY)
-
+set(GTENGINE_INCLUDE_DIR ${GTENGINE_INCLUDE_DIR}/gtengine)
 mark_as_advanced(GTENGINE_INCLUDE_DIR GTENGINE_LIBRARY)

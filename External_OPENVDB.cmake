@@ -22,8 +22,13 @@ else()
     )
 
   ExternalProject_Add_Step(openvdb link
-    COMMAND "ln -s ${openvdb_prefix}/src/openvdb-build/libopenvdb.so ${INSTALL_DIRECTORY}/lib/libopenvdb.so"
+    COMMAND sh -c "ln -sf ${openvdb_prefix}/src/openvdb-build/libopenvdb.so ${INSTALL_DIRECTORY}/lib/libopenvdb.so"
     DEPENDEES install
     ALWAYS 1
-  )
+    )
+  ExternalProject_Add_Step(openvdb forcebuild
+    COMMAND ${CMAKE_COMMAND} -E echo "Force build of openvdb"
+    DEPENDERS configure
+    ALWAYS 1
+    )
 endif()

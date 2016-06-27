@@ -23,7 +23,7 @@ else()
 
   ExternalProject_Add_Step(openvdb forcebuild
     COMMAND "ln -s ${openvdb_prefix}/src/openvdb-build/libopenvdb.so ${INSTALL_DIRECTORY}/lib/libopenvdb.so"
-    DEPENDERS configure
+    DEPENDERS install
     ALWAYS 1
   )
 endif()

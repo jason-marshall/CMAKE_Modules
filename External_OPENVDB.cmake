@@ -21,9 +21,9 @@ else()
     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=<INSTALL_DIR>
     )
 
-  ExternalProject_Add_Step(openvdb forcebuild
+  ExternalProject_Add_Step(openvdb link
     COMMAND "ln -s ${openvdb_prefix}/src/openvdb-build/libopenvdb.so ${INSTALL_DIRECTORY}/lib/libopenvdb.so"
-    DEPENDERS install
+    DEPENDEES install
     ALWAYS 1
   )
 endif()

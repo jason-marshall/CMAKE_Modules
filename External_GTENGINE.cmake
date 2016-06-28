@@ -1,6 +1,6 @@
 # An external project for gtengine
 set(gtengine_prefix "${CMAKE_CURRENT_BINARY_DIR}/modules/gtengine")
-set(gtengine_file "http://www.geometrictools.com/Downloads/GeometricToolsEngine3p0.zip")
+set(gtengine_file "https://github.com/jason-marshall/GeometricToolsTweak.git")
 
 # If Windows we use CMake, otherwise ./configure
 if(WIN32)

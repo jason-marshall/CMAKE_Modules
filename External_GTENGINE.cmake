@@ -16,7 +16,7 @@ else()
     BUILD_IN_SOURCE 1
     BUILD_COMMAND cd ${gtengine_prefix}/src/gtengine && make CFG=Release -f makeengine.gte
     CONFIGURE_COMMAND ""
-    INSTALL_COMMAND mkdir -p ${CMAKE_CURRENT_BINARY_DIR}/prefix/include/gtengine &&  sh -c "cp -r ${gtengine_prefix}/src/gtengine/Include/* ${CMAKE_CURRENT_BINARY_DIR}/prefix/include/gtengine/." && cp ${gtengine_prefix}/src/gtengine/lib/ReleaseStatic/libgtengine.a ${CMAKE_CURRENT_BINARY_DIR}/prefix/lib/libgtengine.a
+    INSTALL_COMMAND mkdir -p ${CMAKE_CURRENT_BINARY_DIR}/prefix/include/gtengine &&  sh -c "cp -r ${gtengine_prefix}/src/gtengine/Include/* ${CMAKE_CURRENT_BINARY_DIR}/prefix/include/gtengine/." && cp ${gtengine_prefix}/src/gtengine/lib/Release/libgtengine.a ${CMAKE_CURRENT_BINARY_DIR}/prefix/lib/libgtengine.a
     )
 endif()
 

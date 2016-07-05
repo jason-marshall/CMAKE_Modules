@@ -1,7 +1,7 @@
 # An external project for boost
 set(boost_prefix "${CMAKE_CURRENT_BINARY_DIR}/modules/Boost")
 set(boost_file "http://sourceforge.net/projects/boost/files/boost/1.61.0/boost_1_61_0.zip/download")
-set(boost_md5 b0605a9323f1e960f7434dbbd95a7a5c)
+set(boost_md5 015ae4afa6f3e597232bfe1dab949ace)
 
 if(WIN32)
   message("Need to add boost for windows build.")

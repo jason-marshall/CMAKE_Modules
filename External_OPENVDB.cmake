@@ -19,6 +19,10 @@ else()
     # install location
     INSTALL_DIR ${CMAKE_INSTALL_PREFIX}
     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=<INSTALL_DIR>
-    INSTALL_COMMAND sh -c "ln -sf ${openvdb_prefix}/src/openvdb-build/libopenvdb.so ${INSTALL_DIRECTORY}/lib/libopenvdb.so"
+    #INSTALL_COMMAND sh -c "ln -sf ${openvdb_prefix}/src/openvdb-build/libopenvdb.so ${INSTALL_DIRECTORY}/lib/libopenvdb.so"
     )
+  ExternalProject_Add_Step(openvdb link
+    COMMAND sh -c "ln -sf ${openvdb_prefix}/src/openvdb-build/libopenvdb.so ${INSTALL_DIRECTORY}/lib/libopenvdb.so"
+    DEPENDEES install
+    )  
 endif()

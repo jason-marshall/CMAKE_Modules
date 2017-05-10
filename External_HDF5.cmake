@@ -5,8 +5,8 @@ set(hdf5_prefix "${CMAKE_CURRENT_BINARY_DIR}/modules")
 if(WIN32)
 
 else()
-  set(hdf5_file "https://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.17.tar.gz")
-  set(hdf5_md5 7d572f8f3b798a628b8245af0391a0ca)
+  set(hdf5_file "https://support.hdfgroup.org/ftp/HDF5/current18/src/hdf5-1.8.18.tar.gz")
+  set(hdf5_md5 dd2148b740713ca0295442ec683d7b1c)
   ExternalProject_Add(hdf5
     # specify build location
     PREFIX ${hdf5_prefix}

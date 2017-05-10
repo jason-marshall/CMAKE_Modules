@@ -3,7 +3,7 @@ set(zlib_download "${CMAKE_CURRENT_BINARY_DIR}/modules/download")
 set(zlib_source  "${CMAKE_CURRENT_BINARY_DIR}/modules/src/zlib")
 set(zlib_build   "${CMAKE_CURRENT_BINARY_DIR}/modules/build/zlib")
 set(zlib_prefix "${CMAKE_CURRENT_BINARY_DIR}/modules/zlib")
-set(zlib_md5 44d667c142d7cda120332623eab69f40)
+set(zlib_md5 1c9f62f0778697a09d36121ead88e08e)
 set(zlib_file "http://zlib.net/zlib-1.2.11.tar.gz")
 
 # If Windows we use CMake, otherwise ./configure

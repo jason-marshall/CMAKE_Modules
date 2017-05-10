@@ -1,6 +1,6 @@
 # An external project for stlib
 set(stlib_prefix "${CMAKE_CURRENT_BINARY_DIR}/modules/stlib")
-set(stlib_file "https://bitbucket.org/seanmauch/stlib.git")
+set(stlib_file "https://github.com/jason-marshall/STLIB")
 
 # If Windows we use CMake, otherwise ./configure
 if(WIN32)
